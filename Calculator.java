@@ -14,7 +14,7 @@ public class Calculator{
         num1 = scanner.nextInt();
         num2 = scanner.nextInt();
 
-        System.out.println("Would you like to add or subtract?");
+        System.out.println("Choose which operation you would like to perform: +, -, *, /");
 
         scanner = new Scanner(System.in);
         operation = scanner.next().charAt(0);
@@ -25,12 +25,18 @@ public class Calculator{
         } else if (operation == '-'){
             res = num1-num2;
             System.out.println(res);
+        } else if (operation == '*'){
+            res = num1*num2;
+            System.out.println(res);
+        } else if (operation == '/') {
+            res = num1/num2;
+            System.out.println(res);
         } else {
-            System.out.println("Please type '+' or '-'");
+            System.out.println("Please type '+', '-', '*', or '/'");
         }
         
             
-        
+       
 
 
     }
