@@ -3,16 +3,16 @@ import java.util.Scanner;
 public class Calculator{
     
     public static void main(String[] args) {
-        int num1;
-        int num2;
+        float num1;
+        float num2;
         char operation;
-        int res;
+        float res;
 
-        System.out.println("Please enter two whole numbers");
+        System.out.println("Please enter two numbers");
         Scanner scanner = new Scanner(System.in);
 
-        num1 = scanner.nextInt();
-        num2 = scanner.nextInt();
+        num1 = scanner.nextFloat();
+        num2 = scanner.nextFloat();
 
         System.out.println("Choose which operation you would like to perform: +, -, *, /");
 
