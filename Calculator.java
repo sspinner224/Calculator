@@ -30,6 +30,9 @@ public class Calculator{
             System.out.println(res);
         } else if (operation == '/') {
             res = num1/num2;
+            if (num2 == 0) {
+            System.out.println("Error: Divide by Zero");
+            } else 
             System.out.println(res);
         } else {
             System.out.println("Please type '+', '-', '*', or '/'");
